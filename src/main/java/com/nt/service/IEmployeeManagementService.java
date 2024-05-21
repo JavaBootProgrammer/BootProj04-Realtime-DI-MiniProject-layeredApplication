@@ -5,5 +5,5 @@ import java.util.List;
 import com.nt.model.Employee;
 
 public interface IEmployeeManagementService {
-	public List<Employee> fetchEmployeesByDesgs(String desg1, String desg2, String desg3) throws Exception;
+    public List<Employee> fetchEmployeesByDesgs(String desg1, String desg2, String desg3) throws Exception;
 }
