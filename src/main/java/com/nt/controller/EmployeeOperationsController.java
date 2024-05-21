@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.nt.model.Employee;
-import com.nt.service.IEmployeeMgmtService;
+import com.nt.service.IEmployeeManagementService;
 
 @Controller("empController")
 public class EmployeeOperationsController {
 	@Autowired
-	private IEmployeeMgmtService  empService;
-	
-	
-	public   List<Employee>   showEmployeesByDesgs(String desg1,String desg2,String desg3)throws Exception{
-		//use service
-		List<Employee> list=empService.fetchEmployeesByDesgs(desg1, desg2, desg3);
+	private IEmployeeManagementService employeeService;
+
+	public List<Employee> showEmployeesByDesgs(String designation1, String designation2, String designation3)
+			throws Exception {
+		// use service
+		List<Employee> list = employeeService.fetchEmployeesByDesgs(designation1, designation2, designation3);
 		return list;
 	}
 
