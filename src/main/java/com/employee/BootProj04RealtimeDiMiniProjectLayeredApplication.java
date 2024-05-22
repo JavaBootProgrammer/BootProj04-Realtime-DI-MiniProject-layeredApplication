@@ -1,4 +1,4 @@
-package com.nt;
+package com.employee;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.nt.controller.EmployeeOperationsController;
-import com.nt.model.Employee;
+import com.employee.controller.EmployeeOperationsController;
+import com.employee.model.Employee;
 
 @SpringBootApplication
 public class BootProj04RealtimeDiMiniProjectLayeredApplication {
